@@ -1,0 +1,244 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: #F3EFE0;
+}
+
+h1{
+	font-family: 'Lobster', Georgia, Times, serif;
+	font-size: 60px;
+	color: #FFFFFF;
+	text-align: left;
+}
+h2{
+	font-family: 'Lobster', Georgia, Times, serif;
+	font-size: 54px;
+	font-weight: 300;
+	text-align: center;
+	color: #2ECC71;
+	margin: 10px 0px;
+}
+h3{
+	font-family: 'Cabin', Helvetica, Arial, sans-serif;
+	color: #2ECC71;
+	font-size: 28px;
+	margin: 0 auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+h4{
+	margin: 0 auto;
+}
+p, strong, br{
+	font-family: 'Cabin', Helvetica, Arial, sans-serif;
+ 	font-size: 15px;
+ 	line-height: 25px;
+ 	margin: 0 auto;
+}
+
+hr { margin: 40px 0px; 
+	 border-color: #727878;
+	 opacity: 0.2; 
+	 filter:alpha(opacity=20); 
+}
+
+.jumbotron{
+	background: center left url(images/seaturtle.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 90%; 
+}
+
+.jumbotron .container > *{
+	color: #FFFFFF;
+}
+
+.column{
+	float: left;
+}
+.sidenav{
+	position: fixed;
+	right: 8%;
+	width: 110px;
+	top: 60px;
+	z-index: 1;
+	background-color: #111;
+	overflow-x: hidden;
+}
+.link-list li{
+	list-style-type: none;
+	text-align: center;
+}
+.link-list li > a{
+	display: block;
+	font-weight: 600;
+	color: #FFFFFF;
+	padding-top: 30px;
+	height: 80px;
+}
+
+#profile .row > div img{
+	width: 100%;
+	max-width: 360px;
+	height: auto;
+}
+#experiences > h3{
+	padding: 30px 0px;
+}
+#experiences > p {
+	font-weight: 200;
+}
+#experiences .container-fluid > h3{
+	padding: 30px 0px;
+}
+#experiences .row{
+	margin-bottom: 20px;
+}
+
+.experience-image{
+	margin: 0px;
+	padding: 0px;
+}
+#experiences .row > div img{
+	width: 100%;
+	max-width: 302px;
+	
+} 
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.caption{
+	text-align: center;
+}
+
+.container{
+	max-width: 1280px;
+	padding: 40px 200px; 
+	margin: 0 auto;
+}
+.container-fluid{
+	padding: 0px;
+}
+.background-white {
+	background-color: white;
+	padding-bottom: 100px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#abilities > h3{
+	padding: 30px 0px;
+}
+.progress-title{
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 2px;
+    margin: 0 0 15px;
+}
+.progress{
+    height: 26px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 40px;
+    overflow: visible;
+    position: relative;
+}
+.progress .progress-bar{
+    box-shadow: none;
+    border-radius: 0;
+    position: relative;
+    -webkit-animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 1s;
+    animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 1s;
+}
+.progress-bar .progress-value{
+    width: 50px;
+    height: 100%;
+    background: #000;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    position: absolute;
+    line-height: 27px;
+    top: 0;
+    left: 0;
+}
+.progress:after,
+.progress .progress-bar:after,
+.progress .progress-value:after{
+    content: "";
+    border-left: 13px solid rgba(0,0,0,0.1);
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+    position: absolute;
+    top: 0;
+    right: -13px;
+}
+.progress.red .progress-bar:after{ border-left-color: #d9534f; }
+.progress .progress-value:after{ border-left: 13px solid #000; }
+.progress.blue .progress-bar:after{ border-left-color: #5bc0de; }
+.progress.yellow .progress-bar:after{ border-left-color: #f0ad4e; }
+.progress.green .progress-bar:after{ border-left-color: #5cb85c; }
+.progress.dark-blue .progress-bar:after{ border-left-color: #337ab7; }
+@-webkit-keyframes animate-positive{
+    0%{ width: 0; }
+}
+@keyframes animate-positive{
+    0%{ width: 0; }
+}
+#projects .grid-container{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 15px;
+	position: relative;
+	
+}
+#projects .grid-item{
+	padding: 2rem 3rem;
+	background-color: #DED3A9;
+	position: relative;
+	min-height: 300px;
+}
+#projects .github-buttons{
+	padding: 5px 10px;
+}
+#projects .project-title{
+	color: black;
+	font-weight: 800;
+	text-align: left;
+	margin-bottom: 10px;
+}
+#projects .project-description{
+	text-align: left;
+	color: black;
+	margin-bottom: 20px;
+	padding-right: 20px;
+}
+#projects .project-tech-list{
+	display: flex;
+	align-items: flex-end;
+	margin: 20px 0px 0px;
+}
+#projects .project-tech-list li{
+	font-family: 'Cabin', Helvetica, Arial, sans-serif;
+	 font-size: 15px;
+	 list-style: none;
+	 margin-right: 15px;
+}
+#projects .grid-item > footer{
+	width: auto;
+	bottom: 0;
+	position: absolute;
+	padding: 30px 0px;
+	text-align: center;
+
+}
