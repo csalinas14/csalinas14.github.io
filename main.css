@@ -188,7 +188,8 @@ hr { margin: 40px 0px;
 .progress.blue .progress-bar:after{ border-left-color: #5bc0de; }
 .progress.yellow .progress-bar:after{ border-left-color: #f0ad4e; }
 .progress.green .progress-bar:after{ border-left-color: #5cb85c; }
-.progress.dark-blue .progress-bar:after{ border-left-color: #337ab7; }
+.progress.dark-blue .progress-bar:after{ border-left-color: #337ab7;}
+.progress.purple .progress-bar:after{ border-left-color: #9400d3; } 
 @-webkit-keyframes animate-positive{
     0%{ width: 0; }
 }
