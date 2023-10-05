@@ -231,7 +231,9 @@ hr {
 #projects .grid-item {
   padding: 2rem 3rem;
   background-color: #ded3a9;
-  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
   min-height: 300px;
 }
 #projects .github-buttons {
@@ -251,7 +253,6 @@ hr {
 }
 #projects .project-tech-list {
   display: flex;
-  align-items: flex-end;
   flex-wrap: wrap;
   margin: 20px 0px 0px;
 }
