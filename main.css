@@ -70,6 +70,7 @@ hr {
   z-index: 1;
   background-color: #111;
   overflow-x: hidden;
+  border-radius: 25px;
 }
 .link-list li {
   list-style-type: none;
@@ -220,6 +221,7 @@ hr {
     width: 0;
   }
 }
+
 #projects .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -250,6 +252,7 @@ hr {
 #projects .project-tech-list {
   display: flex;
   align-items: flex-end;
+  flex-wrap: wrap;
   margin: 20px 0px 0px;
 }
 #projects .project-tech-list li {
@@ -284,5 +287,13 @@ hr {
     background-repeat: no-repeat;
     background-size: contain, cover;
     height: 90%;
+  }
+  .sidenav {
+    right: 1%;
+    width: 85px;
+    top: 60px;
+  }
+  #projects .grid-item > .footer {
+    background-color: #5cb85c;
   }
 }
